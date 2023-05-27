@@ -7,12 +7,14 @@ function App() {
   
   const [isDark, setDark] = useState(true)
 
+  
+  // Use the state variable to toggle between dark and light
+  const appClass = isDark ? "App dark" : "App light"
+  
   function handleClick() {
     setDark(() => !isDark)
   }
 
-  // Use the state variable to toggle between dark and light
-  const appClass = isDark ? "App dark" : "App light"
  
   return (
     <div className={appClass}>
