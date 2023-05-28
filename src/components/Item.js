@@ -11,6 +11,7 @@ function Item({ name, category }) {
   const itemClass = inShoppingList ? "in-cart" : ""
   const buttonTitle = inShoppingList ? "Remove from Cart" : "Add to Cart"
 
+
   return (
     <li className={itemClass}>
       <span>{name}</span>
